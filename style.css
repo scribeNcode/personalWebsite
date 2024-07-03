@@ -1,57 +1,164 @@
-/* *{
-    border: 0;
-    margin: 0 auto;
-    box-sizing: border-box;
-}
-
-*/
-
-
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    background-color: #f0f0f0;
-    padding: 20px;
-    text-align: center;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background-color: #f0f0f0;
+  position: fixed;
+  width: 100%;
 }
 
-.infoWrapper, .myGoalsWrapper {
-    padding: 20px;
+main {
+  padding-top: 7rem;
 }
 
-.infoWrapper {
-    background-color: #f9f9f9;
-    margin-bottom: 20px;
+[data-testid="slackDisplayName"] {
+  font-size: 1.5rem;
+}
+
+.slackDisplayNameWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+[data-testid="slackDisplayName"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeAndDayWrapper {
+  padding: 0 0.5rem;
+  border-radius: 0.2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.clock {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: #333;
 }
 
 .myGoalsWrapper {
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    padding: 30px;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+
+.infoWrapper {
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+.myImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #2d4487;
+}
+
+.contactMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactMe p {
+  font-size: 1.5rem;
 }
 
 .myGoalsWrapper h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .myGoalsWrapper p {
-    font-size: 16px;
-    margin-bottom: 15px;
+  font-size: 16px;
+  margin-bottom: 15px;
 }
 
 .myGoalsWrapper ol {
-    padding-left: 20px;
-    margin-bottom: 15px;
+  padding-left: 20px;
+  margin-bottom: 15px;
 }
 
 .myGoalsWrapper li {
-    font-size: 16px;
-    margin-bottom: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
+.learnMoreDiv h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.otherWebsitesDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ul .otherWebsitesDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: red;
+}
+
+footer {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 2rem;
+}
+
+.learnMoreDiv {
+  width: 100%;
+  text-align: center;
+}
+
+/* Style for Mobile */
+@media screen and (max-width: 425px) {
+  .clock {
+    font-size: 13px;
+  }
+
+  header {
+    gap: 30%;
+  }
+
+  [data-testid="slackDisplayName"] {
+    margin-left: 1rem;
+  }
+
+  .timeAndDayWrapper {
+    margin-right: rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  [data-testid="slackDisplayName"] {
+    font-size: 1.1rem;
+  }
+}

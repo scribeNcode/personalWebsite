@@ -1,39 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
     <header>
-        <p data-testid="slackDisplayName">Slack Name: scribencode</p>
-        <p id="slackEmail">Slack Email: deyeye99@gmail.com <span data-testid="slackEmail"></span></p>
+      <div class="slackDisplayNameWrapper">
+        <p data-testid="slackDisplayName">scribencode</p>
+      </div>
+      <div class="timeAndDayWrapper">
+        <p data-testid="currentTimeUTC" class="clock"></p>
+        <p data-testid="currentDay"></p>
+      </div>
     </header>
     <main>
-        <div class="infoWrapper">
-            <p>Current Time in UTC: <span data-testid="currentTimeUTC"></span></p>
-            <p>Current Day of the week : <span data-testid="currentDay"></span></p>
-            <img src="" alt="" srcset="">
-            <!-- <p>Slack profile picture: <span data-testid="slackProfilePicture"></span></p> -->
+      <div class="myImage">
+        <img
+          data-testid="slackProfilePicture"
+          src="./images/scribencodeImage.png"
+          alt="my_image"
+          srcset=""
+        />
+      </div>
+
+      <div class="contactMe"></div>
+      <div class="myGoalsWrapper">
+        <div>
+          <h1>Welcome to My Frontend Engineering Journey!</h1>
+          <p>
+            As a dedicated frontend engineer, my focus over the next two years
+            is to elevate user experiences through innovative and robust web
+            applications. I am driven by the following aspirations:
+          </p>
         </div>
-       
-        <div class="myGoalsWrapper">
-            <h1>Welcome to My Frontend Engineering Journey!</h1>
-            <p>As a dedicated frontend engineer, my focus over the next two years is to elevate user experiences through innovative and robust web applications. At [Your Name or Website Name], we are driven by the following aspirations:</p>
-            <ol>
-                <li>Mastery of Modern Frontend Technologies: We are committed to mastering the latest frontend frameworks and tools such as React, Vue.js, and Angular. By staying updated with industry trends and best practices, we aim to deliver cutting-edge solutions that exceed user expectations.</li>
-                <li>UI/UX Excellence: Our goal is to create intuitive and visually appealing interfaces that enhance user engagement and satisfaction. Through a blend of design principles and technical proficiency, we strive to craft seamless user experiences across devices and platforms.</li>
-                <li>Collaborative Innovation: Collaboration fuels our creativity. We thrive in cross-functional teams, collaborating closely with designers, backend engineers, and stakeholders to build scalable and responsive web applications. By embracing agile methodologies, we ensure rapid iteration and continuous improvement.</li>
-                <li>Continuous Learning and Growth: Learning is a lifelong journey. We are dedicated to expanding our knowledge through courses, conferences, and hands-on projects. By honing our skills in performance optimization, accessibility, and responsive design, we aim to set new benchmarks in frontend development.</li>
-            </ol>
+        <div>
+          <ol>
+            <li>
+              <b>Mastery of Modern Frontend Technologies:</b> I am committed to
+              mastering the latest frontend frameworks and tools such as React,
+              Vue.js, and Angular. By staying updated with industry trends and
+              best practices, I aim to deliver cutting-edge solutions that
+              exceed user expectations.
+            </li>
+            <li>
+              <b> UI/UX Excellence:</b> My goal is to create intuitive and
+              visually appealing interfaces that enhance user engagement and
+              satisfaction. Through a blend of design principles and technical
+              proficiency, I strive to craft seamless user experiences across
+              devices and platforms.
+            </li>
+            <li>
+              <b>Collaborative Innovation: </b>Collaboration fuels creativity. I
+              thrive in cross-functional teams, collaborating closely with
+              designers, backend engineers, and stakeholders to build scalable
+              and responsive web applications. By embracing agile methodologies,
+              I will ensure rapid iteration and continuous improvement.
+            </li>
+            <li>
+              <b>Continuous Learning and Growth:</b> Learning is a lifelong
+              journey. I am dedicated to expanding my knowledge through courses,
+              conferences, and hands-on projects. By honing my skills in
+              performance optimization, accessibility, and responsive design, I
+              aim to set new benchmarks in frontend development.
+            </li>
+          </ol>
         </div>
+      </div>
+
+      <div class="otherWebsitesDiv">
+        <div class="learnMoreDiv">
+          <h4>Be a better Developer. Check out these websites:</h4>
+        </div>
+        <ul>
+          <li>
+            <a
+              href="http://hng.tech/learn"
+              target="_blank"
+              data-testid="hngLink"
+              >hng.tech</a
+            >
+          </li>
+          <li>
+            <a
+              href=" http://keyword.dog"
+              target="_blank"
+              data-testid="keywordLink"
+              >keyword.dog</a
+            >
+          </li>
+          <li>
+            <a
+              href="http://scrapeanyweb.site"
+              target="_blank"
+              data-testid="scrapeanywebLink"
+              >scrapeanyweb.site</a
+            >
+          </li>
+        </ul>
+      </div>
     </main>
+
     <footer>
-        <a href="http://hng.tech/learn" data-testid="hngLink">Learn from HNG</a>
-        <a href=" http://keyword.dog" data-testid="keywordLink">Visit KeywordDog</a>
-        <a href="http://scrapeanyweb" data-testid="scrapeanywebLink">scrapeanyweb</a>
+      <p id="slackEmail">
+        Mail:
+        <a data-testid="slackEmail" href="mailto:deyeye99@gmail.com"
+          >deyeye99@gmail.com</a
+        >
+      </p>
     </footer>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
